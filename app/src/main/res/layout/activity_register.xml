@@ -78,7 +78,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/question_already"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:visibility="gone"/>
 
     </RelativeLayout>
 
