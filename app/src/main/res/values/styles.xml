@@ -5,6 +5,12 @@
         <item name="colorPrimary">#5792EA</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="colorButtonNormal">#ffff</item>-->
+<!--        <item name="android:buttonStyle">#ffff</item>-->
+    </style>
+
+    <style name="buttonColor" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -19,5 +25,6 @@
     <style name="toolbarStyle" parent="Theme.MaterialComponents.Light">
         <item name="android:background">#5792EA</item>
     </style>
+    
 
 </resources>

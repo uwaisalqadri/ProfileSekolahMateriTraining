@@ -5,39 +5,42 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.FounderFragment"
-    android:background="@drawable/bgr_layout">
+    android:background="@drawable/bgr_layout"
+    android:id="@+id/constlay">
 
-
-    <Button
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:letterSpacing="0"
-        android:textAllCaps="false"
+    <com.alespero.expandablecardview.ExpandableCardView
         android:background="@drawable/bgr_edittext"
-        android:id="@+id/button"
+        android:id="@+id/spinner_nasional"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        android:text="Internasional"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_internasional"
 
-    <Button
-        android:background="@drawable/bgr_edittext"
-        android:letterSpacing="0"
-        android:textSize="20sp"
-        android:textAllCaps="false"
-        android:id="@+id/button2"
+        app:title="Nasional"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"
+        />
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/spinner_internasional"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        android:text="Nasional"
+        android:background="@drawable/bgr_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:title="Intrnasional"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
