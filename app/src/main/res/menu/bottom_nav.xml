@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/galeriFragment"
+        android:title="Galeri"
+        android:icon="@drawable/icon_gallery"
+        />
+
+    <item
+        android:id="@+id/prestasiFragment"
+        android:title="Prestasi"
+        android:icon="@drawable/medal"/>
+
+    <item
+        android:id="@+id/sekolahFragment"
+        android:title="Sekolah"
+        android:icon="@drawable/icon_school"/>
+
+    <item
+        android:id="@+id/founderFragment"
+        android:title="Founder"
+        android:icon="@drawable/icon_person"/>
+
+    <item
+        android:id="@+id/talentFragment"
+        android:title="Talent"
+        android:icon="@drawable/talent"/>
+
+
+
+
+</menu>

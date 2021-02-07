@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FounderFragment"
+    android:background="@drawable/bgr_layout"
+    android:id="@+id/constlay">
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:background="@drawable/bgr_edittext"
+        android:id="@+id/spinner_nasional"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_internasional"
+
+        app:title="Nasional"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"
+        />
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/spinner_internasional"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/bgr_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:title="Intrnasional"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
